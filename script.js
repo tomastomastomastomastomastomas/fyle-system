@@ -1,4 +1,6 @@
 const fs = require("fs");
+
+// Sincronico ----------------------------------------------------------------------------------------------------
 // try {
 //   console.log(fs.readFileSync("data.txt", "utf8"));
 // } catch (err) {
@@ -33,6 +35,8 @@ const fs = require("fs");
 // } catch (err) {
 //   fs.appendFileSync("log.txt", `\n${err}`);
 // }
+
+// Asincronico ----------------------------------------------------------------------------------------------------
 
 fs.readFile("data.txt", "utf-8", (err, data) => {
   if (err) {
